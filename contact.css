@@ -1,0 +1,31 @@
+main {
+  display: flex;
+  justify-content: center;
+  line-height: 1.8;
+}
+
+main>.contact-form {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 10px;
+  padding: 20px;
+}
+
+.buttons>button {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  margin-top: 50px;
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.form-title-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
