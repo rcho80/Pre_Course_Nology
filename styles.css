@@ -1,41 +1,103 @@
-* {
-  padding: 0;
-  margin: 0;
+body {
+  color: #151E12;
+  margin: 30px 50px;
+  line-height: 1.4;
+  padding: 0 100px;
 }
 
 nav>ul {
   list-style-type: none;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   align-items: center;
-  height: 40px;
-  font-size: 20px;
-  background-color: greenyellow;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
 }
 
 nav>ul>li>a {
-  color: #222;
+  padding: 0 100px;
   text-decoration: none;
 }
 
 nav>ul>li>a:hover {
-  color: green;
-  text-decoration: underline;
+  color: #7E2D00;
 }
 
-header {
-  text-align: center;
+.logo {
+  font-size: 4rem;
+  margin-right: auto;
+  padding: 0;
 }
 
-header>h1 {
-  padding: 10px 0;
+
+.logo>a {
+  text-decoration: none;
 }
 
-header>h1:hover {
-  padding: 10px 0;
-  color: green;
+.logo>a:hover {
+  color: #7E2D00;
 }
+
 
 header>h3 {
   font-style: italic;
+  font-size: 2.5rem;
+  padding: 40px 0;
 }
+
+.headerImage {
+  background-image: url("sportGroup.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: border-box;
+  height: 100vh;
+}
+
+/*About section*/
+
+.about {
+  height: 50vh;
+  font-size: 1.5rem;
+  line-height: 2.0;
+}
+
+
+/*Pricing section*/
+
+.pricing {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+
+}
+
+.gallery>img {
+  height: 150px;
+  width: 150px;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.gallery>img:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+
+/*Footer section*/
+footer {
+  height: 25vh;
+  font-size: 1.25rem;
+}
+
+/*  background-color: #D3F4FF;*/
