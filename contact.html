@@ -8,52 +8,50 @@
   <title>Contact Us</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="contact.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
 </head>
 
 <body>
-  <nav>
-    <ul>
-      <li><a href="home.html">Home</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-  </nav>
-
   <header>
-    <h1>Contact All Sports</h1>
-    <h3>Highest quality at reasonable prices</h3>
+    <nav>
+      <ul>
+        <span class='logo'><a href="home.html"> AllSports</span>
+        <li><a href="home.html">About</a></li>
+        <li><a href="home.html">Your Sport</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
-    <form class='contact-form' onsubmit="return submitMessage(event)">
+  <main class="contactMain">
+    <form id="resetForm" class='contact-form' onsubmit="return submitMessage(event)">
       <!--full name-->
-      <label for="full_name">Full Name:</label>
-      <input id="name-label" type="text" name="full_name" placeholder="Enter your Full Name" required>
+      <label for="name_label">Full Name:</label>
+      <input id="name_label" type="text" placeholder="Enter your Full Name" required>
       <!--email-->
-      <label for="email">Email:</label>
-      <input id="email-label" type="text" name="email" placeholder="Enter your Email" required>
+      <label for="email_label">Email:</label>
+      <input id="email_label" type="text" placeholder="Enter your Email" required>
       <!--reason for comment-->
       <label for="feedback_type">Feedback Type:</label>
-      <select name="feedback_type" id="feedbackType">
+      <select id="feedback_type">
         <option value="review">Review</option>
         <option value="complaint">Complaint</option>
         <option value="event">Wholesale</option>
       </select>
       <!--comment-->
       <p><label for="comments"> Add comments:</p></label>
-      <textarea placeholder="Leave your comments here..." name="comments" id="comments" cols="30" rows="3"
-        required></textarea>
+      <textarea placeholder="Leave your comments here..." id="comments" cols="30" rows="3" required></textarea>
       <!--clear button-->
-      <button type="clear">Clear</button>
+      <input onclick="resetDetails()" type="button" value="Clear">
       <!--submit button-->
       <input type="submit" value="Submit Query">
     </form>
   </main>
 
-  <footer>
+  <footer class="contactFooter">
     <div class="form-title-section">
       <h3>Contact Messages</h3>
       <br>
-      <button onclick="deleteMessages();">Clear Messages</button>
+      <button onclick="deleteMessages()">Clear Messages</button>
     </div>
     <div class="form-wrapper">
       <dl id="currentMessages">
@@ -62,6 +60,11 @@
   </footer>
 
   <script>
+    function resetDetails() {
+      document.getElementById('resetForm').reset();
+    }
+
+
     function deleteMessages() {
       if (window.sessionStorage.getItem('messages')) {
         window.sessionStorage.removeItem('messages');
@@ -74,9 +77,9 @@
     function submitMessage(event) {
       event.preventDefault();
 
-      const name = document.getElementById('name-label').value;
-      const email = document.getElementById('email-label').value;
-      const feedback = document.getElementById("feedbackType").value;
+      const name = document.getElementById('name_label').value;
+      const email = document.getElementById('email_label').value;
+      const feedback = document.getElementById("feedback_type").value;
       const comment = document.getElementById('comments').value;
 
 

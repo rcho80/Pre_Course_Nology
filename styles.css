@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Roboto+Condensed:wght@700&display=swap');
+
 body {
   color: #151E12;
   margin: 30px 50px;
@@ -6,6 +8,8 @@ body {
 }
 
 nav>ul {
+  font-family: 'Roboto Condensed',
+    sans-serif;
   list-style-type: none;
   display: flex;
   justify-content: flex-end;
@@ -17,7 +21,7 @@ nav>ul {
 }
 
 nav>ul>li>a {
-  padding: 0 100px;
+  padding: 0 50px;
   text-decoration: none;
 }
 
@@ -41,26 +45,27 @@ nav>ul>li>a:hover {
 }
 
 
-header>h3 {
-  font-style: italic;
-  font-size: 2.5rem;
-  padding: 40px 0;
-}
-
 .headerImage {
-  background-image: url("sportGroup.jpg");
+  background-image: url("images/sportGroup1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-origin: border-box;
-  height: 100vh;
+  height: 80vh;
+}
+
+.headerImage>h3 {
+  margin-bottom: 0;
+  font-family: 'Montserrat',
+    sans-serif;
+  font-size: 2rem;
 }
 
 /*About section*/
 
 .about {
-  height: 50vh;
   font-size: 1.5rem;
   line-height: 2.0;
+  padding-bottom: 40px;
 }
 
 
@@ -68,20 +73,22 @@ header>h3 {
 
 .pricing {
   display: flex;
+  align-items: center;
   justify-content: center;
-  padding: 20px;
+  height: 70vh;
 }
 
 .gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
+  list-style: none;
 
 }
 
 .gallery>img {
-  height: 150px;
-  width: 150px;
+  height: 240px;
+  width: 240px;
   padding: 10px;
   border: 1px solid white;
   border-radius: 5px;
@@ -95,9 +102,24 @@ header>h3 {
 
 
 /*Footer section*/
-footer {
-  height: 25vh;
+.footContact {
+  font-weight: 400;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 1.25rem;
+  margin: auto 0;
+  line-height: 1.4;
+}
+
+.contacts {
+  padding: 0 50px;
+  display: flex;
+}
+
+.contacts>p {
+  padding: 25px;
 }
 
 /*  background-color: #D3F4FF;*/
