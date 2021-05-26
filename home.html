@@ -7,46 +7,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>All Sports</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="home.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
 </head>
 
 <body>
-  <nav>
-    <ul>
-      <span class='logo'><a href="home.html"> AllSports</span>
-      <li><a href="">About</a></li>
-      <li><a href="pricing.html">Pricing</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-  </nav>
+  <header>
+    <nav>
+      <ul>
+        <span class='logo'><a href="home.html"> AllSports</span>
+        <li><a href="#clickAbout">About</a></li>
+        <li><a href="#sportChoice">Your Sport</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
 
-  <header class="headerImage">
-    <h3>Highest quality at reasonable prices</h3>
+    <section class="headerImage">
+      <h3>Highest quality at reasonable prices</h3>
+    </section>
   </header>
 
-  <section class='about'>
-    <div>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium deleniti voluptatum laudantium quaerat, unde
-      vel laboriosam explicabo, voluptas saepe ipsa reprehenderit numquam similique praesentium amet eveniet, omnis
-      perspiciatis assumenda labore.
-      <br>
-      <br>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium deleniti voluptatum laudantium quaerat, unde
-      vel laboriosam explicabo, voluptas saepe ipsa reprehenderit numquam similique praesentium amet eveniet, omnis
-      perspiciatis assumenda labore.
-    </div>
-  </section>
 
-  <section class="pricing">
-    <div class='gallery'>
-      <img src="sportGroup.jpg" alt="photo-of-most-popular-sports">
-      <img src="sportGroup.jpg" alt="photo-of-most-popular-sports">
-      <img src="sportGroup.jpg" alt="photo-of-most-popular-sports">
-      <img src="sportGroup.jpg" alt="photo-of-most-popular-sports">
-      <img src="sportGroup.jpg" alt="photo-of-most-popular-sports">
-      <img src="sportGroup.jpg" alt="photo-of-most-popular-sports">
-    </div>
-  </section>
+  <main>
+    <section>
+      <div id="clickAbout" class='about'>
+        <p>
+          A world of sports options for all ages awaits you at AllSports. With over 1000 individual items covering the
+          top
+          ten global sports from Football, Basketball, Tennis, Golf to Table Tennis, Cricket, Volleyball and MMA, we
+          have
+          an
+          item just right for you and your family to help you win the next great challenge of your lives.
+        </p>
+
+        <p>
+          Only carefully selected products meeting stringent quality assessment tests stock our stores, ensuring each
+          item has been tried and tested to give not only the highest of quality but at affordable prices for Australian
+          families.
+        </p>
+        <p>
+          All products meet consumer guarantess under the Australian Consumer Law (ACL) and are proudly &copy Australian
+          Made.
+        </p>
+      </div>
+    </section>
+
+    <section class="pricing">
+      <div id="sportChoice" class='gallery'>
+        <img src="images/basketball.jpg" alt="photo-of-most-popular-sports">
+        <img src="images/soccer.jpg" alt="photo-of-most-popular-sports">
+        <img src="images/golf.jpg" alt="photo-of-most-popular-sports">
+        <img src="images/cricket.jpg" alt="photo-of-most-popular-sports">
+        <img src="images/tennis.jpg" alt="photo-of-most-popular-sports">
+        <img src="images/hockey.jpg" alt="photo-of-most-popular-sports">
+      </div>
+    </section>
+  </main>
+
 
   <footer>
     <div class='footContact'>
@@ -56,8 +72,8 @@
         <p>Email: enquiries@allsports.com</p>
         <p>Hours: Mon - Sat 09h30 - 20h00</p>
       </div>
+      <p class='copyright'>&copy Copyright 2021 _RC_</p>
     </div>
-    <p class='copyright'>&copy Copyright 2021 _RC_</p>
   </footer>
 
 </body>
